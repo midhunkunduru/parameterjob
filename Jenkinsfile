@@ -8,8 +8,10 @@ properties([
 ])
 node("master")
 {
+  def a = "localvariablevalue"
     stage("Checkout")
-{  
+{
+  echo "${a}"
   echo "${param1}"
   
   echo "${param2}"
