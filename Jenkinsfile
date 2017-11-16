@@ -10,7 +10,14 @@ node("master")
 {
     stage("Checkout")
 {  
-    sh 'echo $BRANCH_NAME'
+  echo "${param1}"
+  
+  echo "${param2}"
+  
+  echo "${param3}"
+  
+  echo "${param4}"
+  
 }
     
     stage("Build")
